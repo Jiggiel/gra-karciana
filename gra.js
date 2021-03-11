@@ -61,7 +61,7 @@ function pokazkarty (nr)
 					}
 				
 			ruchy++;
-			$(".wynik").html("Ruchów: "+ruchy);
+			$(".wynik").html("Twoje ruchy: "+ruchy);
 			widoczna = false;
 		}
 		}
