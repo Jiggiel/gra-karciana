@@ -5,7 +5,6 @@
 <title>Generowanie karty</title>
 	<style>
 		body {background-color: #4F4F4F;}
-		.karty {display: grid; grid-template-columns: repeat(4, 170px); grid-gap: 20px;}
 		.karta {background-color: white; border-radius: 10px; width: 170px; height: 230px;}
 		.typ {text-align: center; position: relative; top: 50px; font-size: 100px;}
 		.ilosc::before, .ilosc::after {content: attr(data-liczba); font-size: 30px; position: absolute;}
@@ -16,15 +15,11 @@
 </head>
 
 <body>
-	<div class="karty">
-		<div class="karta">
-			<div class="tyl">
+	<div class="karta">
+		<div class="przod" id="przod">
+			<div class="ilosc" id="ilosc">
 			</div>
-			<div class="przod" id="przod">
-				<div class="ilosc" id="ilosc">
-				</div>
-				<div class="typ" id="typ">
-				</div>
+			<div class="typ" id="typ">
 			</div>
 		</div>
 	</div>
